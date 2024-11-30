@@ -1,4 +1,4 @@
-Listagem basica de filmes.
+Biblioteca basica de filmes.
 
 Projetinho basico para o Curso de Backend com Node.js do SENAC.
 
