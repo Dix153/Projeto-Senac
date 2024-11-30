@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca de Filmes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .aba {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .aba.selecionada {
+      background-color: #ccc;
+    }
+    .filme {
+      display: none;
+    }
+    .filme.selecionado {
+      display: block;
+    }
+    .aba[data-aba="acao"] {
+            background-color: #fa0000;  
+            color: white;
+        }
+
+        .aba[data-aba="aventura"] {
+            background-color: #33B5FF;  
+            color: white;
+        }
+
+        .aba[data-aba="ficção"] {
+            background-color: #FFD700;  
+            color: white;
+        }
+        .aba.selecionada {
+            background-color: #333;
+            color: white;
+        }
+
+  </style>
+</head>
+<body>
+  <h1>Biblioteca de Filmes</h1>
+  <div id="abas">
+    <div class="aba selecionada" data-aba="acao">Ação</div>
+    <div class="aba" data-aba="aventura">Aventura</div>
+    <div class="aba" data-aba="ficção">Ficção</div>
+  </div>
+  <div id="filmes">
+    <div class="filme selecionado" data-categoria="acao">
+      <h2>Atração Perigosa</h2>
+      <h2>john wick</h2>
+      <h2>Dia de Treinamento</h2>
+    </div>
+    <div class="filme" data-categoria="aventura">
+      <h2>Twister</h2> 
+      <h2>Piratas do Caribe</h2>
+      <h2>Viagem ao Centro da terra</h2>
+    </div>
+    <div class="filme" data-categoria="ficção">
+      <h2>Interestelar</h2>
+      <h2>Star Trek</h2>
+      <h2>O dia em que a terra parou</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
